@@ -1,0 +1,182 @@
+
+
+
+h1{
+    color: brown;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333333;
+  }
+
+  .sudoku-tablero {
+      width: 450px;
+      height: 450px;
+      table-layout: fixed;
+      border-collapse: collapse;
+      background-color: #f0f0f0;
+      border: dotted thin black;
+      margin: 7px;
+  }
+  
+.sudoku-tablero td{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    border: 4px rgb(0, 0, 0) solid; 
+    box-sizing: border-box; 
+}
+
+.sudoku-tablero tr td:nth-child(3n){
+
+  border-right: 7px solid rgb(0, 0, 0); 
+}
+
+.sudoku-tablero tr:nth-child(3n) td {
+
+  border-bottom: 7px solid rgb(0, 0, 0); 
+}
+
+.a{
+  background-color: rgb(167, 167, 167);
+}
+
+
+  .color{
+    background-color: rgb(255, 0, 0);
+  }
+  
+
+.resol {
+    position: absolute; 
+    top: 100px; 
+    left: 100px; 
+    padding: 10px 20px;
+    border: none; 
+    color: black; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: white; border: 2px solid #007bff;
+}
+.resol:hover {background: #46a049; color: white;}
+
+.veri {
+  position: absolute; 
+  top: 200px; 
+  left: 100px; 
+  padding: 10px 20px;
+  border: none; 
+  color: rgb(0, 0, 0); 
+  cursor: pointer; 
+  border-radius: 5px; 
+  background-color: rgb(255, 255, 255); border: 2px solid #007bff;
+}
+.veri:hover {background: #46a049; color: white;}
+
+.nuevoJ {
+  appearance: none;
+  position: absolute;
+  top: 300px; 
+  left: 100px; 
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nuevoJ:hover {
+  background-color: #46a049;
+  color: #ffffff;
+}
+
+.Crono {
+  position: absolute; 
+  top: 100px; 
+  left: 1100px; 
+  border-radius: 30px; 
+  background: rgb(255, 255, 255); 
+  padding: 30px; 
+  border: 5px solid rgb(0, 0, 0); 
+  color: rgb(0, 0, 0); 
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 60%;
+  padding: 20px;
+}
+
+.soduko-final {
+  background-color: #000000;
+  width: 20%;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 33px;
+  min-height: 100px;
+  border-radius: 22px;
+  position: absolute;
+  display: none;
+}
+.sudoku-bien {
+  background-color: #000000;
+  width: 20%;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 33px;
+  min-height: 100px;
+  border-radius: 22px;
+  position: absolute;
+  display: none;
+ }
+ #cerrar {
+  position: absolute;
+  top: 5px; 
+  right: 5px; 
+  width: 20px; 
+  height: 20px; 
+ }
+
+#cerrar img {
+  width: 100%; 
+  height: auto; 
+}
+
+     
+.sudoku-mal{
+  background-color: #000000;
+  width: 20%;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align: center;
+  padding: 33px;
+  min-height: 100px;
+  border-radius: 22px;
+  position: absolute;
+  display: none;
+}

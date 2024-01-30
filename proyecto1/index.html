@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoko</title>
+    <link rel="shortcut icon" href="Img/soduko.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body>
+        <section class="textos-header">
+            <h1>
+                JUEGO DE SUDOKU EN LINEA :B 
+            </h1>
+        </section>
+
+        <table class="sudoku-tablero" id="sodukoTablero">
+            <tr>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+            </tr>
+            <tr>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+               <td><div class="a" contenteditable="true"></div></td>
+            </tr>
+            <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+             <tr>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+                <td><div class="a" contenteditable="true"></div></td>
+             </tr>
+           </table>
+
+    <!-- ... Continuar con más filas y celdas -->
+    <button class="veri" id="verificar" >Verificar</button>
+    
+    
+
+    <div class="sudoku-bien" id="soduko-bien">
+
+        <div class="cerrar" id="cerrar"> 
+            <a href="javascript:cerrar()"><img src="Img/cerrar1.png" style="position: absolute; top: 0; right: 0;"> </a>
+        </div>
+        El sudoku esta bien !!!!
+    </div>
+
+    <div class="sudoku-mal" id="soduko-mal">
+        <div class="cerrar" id="cerrar"> 
+            <a href="javascript:cerrar()"><img src="Img/cerrar1.png" style="position: absolute; top: 0; right: 0;"> </a>
+        </div>
+        El sudoku esta incorrecto !!!!
+    </div>
+
+
+    <select class="nuevoJ" name="Dificultad" id="dificultad">
+        <option value="Facil">Facil</option>
+        <option value="Medio">Medio</option>
+        <option value="Dificil">Dificil</option>
+    </select>
+
+
+    <button class="resol" id="resolver">Resolver</button>
+
+
+    <div class="Crono">
+        <div class="tiempo" id="tiempo">00:00:00.000</div>
+        <div class="btn-cont">
+            <div class="btn" onclick="pausar()">
+                <i class="fas fa-pause"></i>
+            </div>
+            <div class="btn" onclick="reiniciar()">
+                <i class="fas fa-undo-alt"></i>
+              </div>
+        </div>
+    </div>
+<!--   -----------------------------------------------------------------  -->
+    <div class="soduko-final" id="soduko-final">
+        Felicidades completaste el soduko!!!!
+    </div>
+    
+ 
+  <script src="soduko.js"></script>
+  <script src="soduko-estilos.js"></script>
+  <script>
+    function cerrar(){
+        document.getElementById('soduko-bien').style.display="none";
+        document.getElementById('soduko-mal').style.display="none";
+    }
+  </script>
+</body>
+</html>
